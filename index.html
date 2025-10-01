@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>高校统一门户高保真原型</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1dQIxhFqefF5eDjK7uHk5j0i5dMGdg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        font-family: 'Inter', 'SF Pro Display', 'PingFang SC', sans-serif;
+        background: linear-gradient(135deg, #e0f2fe 0%, #f8fafc 100%);
+      }
+      iframe {
+        width: 420px;
+        height: 900px;
+        border-radius: 40px;
+        border: none;
+        box-shadow: 0 25px 60px rgba(15, 23, 42, 0.18);
+        background: #0f172a;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen">
+    <header class="max-w-7xl mx-auto px-6 py-12">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+        <div>
+          <h1 class="text-4xl font-bold text-slate-900">高校统一门户高保真原型</h1>
+          <p class="mt-4 text-slate-600 max-w-2xl">
+            以下为基于 iPhone 15 Pro 尺寸打造的 10 个核心界面，采用 Tailwind CSS 与 Font Awesome 构建，使用真实图片与组件，便于研发团队直接参照实现。
+          </p>
+        </div>
+        <div class="mt-6 lg:mt-0 flex items-center space-x-4 text-sm text-slate-500">
+          <a href="docs/ux_analysis.md" class="flex items-center space-x-2 hover:text-blue-600">
+            <i class="fa-solid fa-lightbulb"></i><span>体验分析</span>
+          </a>
+          <a href="docs/interface_plan.md" class="flex items-center space-x-2 hover:text-blue-600">
+            <i class="fa-solid fa-sitemap"></i><span>信息架构</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 pb-24">
+      <div class="grid gap-10 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 justify-items-center">
+        <div class="space-y-4 text-center">
+          <h2 class="text-lg font-semibold text-slate-700">首页仪表盘</h2>
+          <iframe src="prototype/home.html" title="首页仪表盘"></iframe>
+        </div>
+        <div class="space-y-4 text-center">
+          <h2 class="text-lg font-semibold text-slate-700">我的课程</h2>
+          <iframe src="prototype/courses.html" title="我的课程"></iframe>
+        </div>
+        <div class="space-y-4 text-center">
+          <h2 class="text-lg font-semibold text-slate-700">日程与考试</h2>
+          <iframe src="prototype/schedule.html" title="日程与考试"></iframe>
+        </div>
+        <div class="space-y-4 text-center">
+          <h2 class="text-lg font-semibold text-slate-700">校园资讯</h2>
+          <iframe src="prototype/news.html" title="校园资讯"></iframe>
+        </div>
+        <div class="space-y-4 text-center">
+          <h2 class="text-lg font-semibold text-slate-700">图书与资源</h2>
+          <iframe src="prototype/library.html" title="图书与资源"></iframe>
+        </div>
+        <div class="space-y-4 text-center">
+          <h2 class="text-lg font-semibold text-slate-700">成绩与学业</h2>
+          <iframe src="prototype/grades.html" title="成绩与学业"></iframe>
+        </div>
+        <div class="space-y-4 text-center">
+          <h2 class="text-lg font-semibold text-slate-700">校园地图</h2>
+          <iframe src="prototype/map.html" title="校园地图"></iframe>
+        </div>
+        <div class="space-y-4 text-center">
+          <h2 class="text-lg font-semibold text-slate-700">服务大厅</h2>
+          <iframe src="prototype/services.html" title="校园服务"></iframe>
+        </div>
+        <div class="space-y-4 text-center">
+          <h2 class="text-lg font-semibold text-slate-700">个人中心</h2>
+          <iframe src="prototype/profile.html" title="个人中心"></iframe>
+        </div>
+        <div class="space-y-4 text-center">
+          <h2 class="text-lg font-semibold text-slate-700">设置中心</h2>
+          <iframe src="prototype/settings.html" title="设置中心"></iframe>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

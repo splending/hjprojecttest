@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>高校统一门户 - 校园服务</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1dQIxhFqefF5eDjK7uHk5j0i5dMGdg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        background: #e2e8f0;
+        font-family: 'Inter', 'SF Pro Display', 'PingFang SC', sans-serif;
+      }
+      .device-frame {
+        width: 393px;
+        height: 852px;
+        border-radius: 38px;
+        overflow: hidden;
+        box-shadow: 0 20px 45px rgba(15, 23, 42, 0.25);
+        margin: 40px auto;
+        border: 12px solid #111827;
+        background: #f8fafc;
+      }
+      .status-bar {
+        height: 44px;
+        padding: 0 18px;
+      }
+      .tab-bar {
+        height: 86px;
+        border-top: 1px solid rgba(148, 163, 184, 0.35);
+        backdrop-filter: blur(12px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="device-frame">
+      <div class="flex flex-col h-full">
+        <div class="status-bar flex items-end justify-between text-slate-900 text-[13px]">
+          <span class="font-semibold">9:41</span>
+          <div class="flex items-center space-x-1 text-[11px]">
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-full"></i>
+          </div>
+        </div>
+        <main class="flex-1 overflow-y-auto bg-gradient-to-b from-white to-slate-100 px-6 pb-6">
+          <header class="mt-2 mb-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <h1 class="text-2xl font-semibold text-slate-900">校园服务大厅</h1>
+                <p class="text-sm text-slate-500 mt-1">一站式办理报修、证件、宿舍、财务等服务。</p>
+              </div>
+              <button class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-full shadow">发起申请</button>
+            </div>
+            <div class="flex items-center space-x-3 mt-4 overflow-x-auto">
+              <button class="px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-medium shadow">全部</button>
+              <button class="px-4 py-2 bg-white text-slate-600 rounded-full text-sm font-medium shadow">后勤报修</button>
+              <button class="px-4 py-2 bg-white text-slate-600 rounded-full text-sm font-medium shadow">宿舍服务</button>
+              <button class="px-4 py-2 bg-white text-slate-600 rounded-full text-sm font-medium shadow">财务报销</button>
+              <button class="px-4 py-2 bg-white text-slate-600 rounded-full text-sm font-medium shadow">校园卡</button>
+            </div>
+          </header>
+
+          <section class="grid grid-cols-2 gap-4">
+            <article class="bg-white rounded-3xl shadow-sm p-4">
+              <div class="flex items-center justify-between">
+                <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-lg">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <span class="text-xs text-emerald-500">进度 80%</span>
+              </div>
+              <h2 class="text-base font-semibold text-slate-900 mt-3">寝室空调维修</h2>
+              <p class="text-xs text-slate-500 mt-1">工单号：WX20240528 · 预计上门 18:00</p>
+              <button class="mt-4 w-full bg-blue-100 text-blue-600 text-sm py-2 rounded-full">查看进度</button>
+            </article>
+
+            <article class="bg-white rounded-3xl shadow-sm p-4">
+              <div class="flex items-center justify-between">
+                <div class="w-12 h-12 rounded-2xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-lg">
+                  <i class="fa-solid fa-passport"></i>
+                </div>
+                <span class="text-xs text-amber-500">待审批</span>
+              </div>
+              <h2 class="text-base font-semibold text-slate-900 mt-3">在读证明开具</h2>
+              <p class="text-xs text-slate-500 mt-1">提交材料齐全，预计 2 个工作日内完成。</p>
+              <button class="mt-4 w-full bg-blue-100 text-blue-600 text-sm py-2 rounded-full">催办</button>
+            </article>
+
+            <article class="bg-white rounded-3xl shadow-sm p-4">
+              <div class="flex items-center justify-between">
+                <div class="w-12 h-12 rounded-2xl bg-sky-100 text-sky-600 flex items-center justify-center text-lg">
+                  <i class="fa-solid fa-bed"></i>
+                </div>
+                <span class="text-xs text-blue-500">可预约</span>
+              </div>
+              <h2 class="text-base font-semibold text-slate-900 mt-3">临时宿舍申请</h2>
+              <p class="text-xs text-slate-500 mt-1">暑期海外交流生可申请短期住宿。</p>
+              <button class="mt-4 w-full bg-blue-600 text-white text-sm py-2 rounded-full">立即预约</button>
+            </article>
+
+            <article class="bg-white rounded-3xl shadow-sm p-4">
+              <div class="flex items-center justify-between">
+                <div class="w-12 h-12 rounded-2xl bg-cyan-100 text-cyan-600 flex items-center justify-center text-lg">
+                  <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <span class="text-xs text-emerald-500">已完成</span>
+              </div>
+              <h2 class="text-base font-semibold text-slate-900 mt-3">校园卡挂失补办</h2>
+              <p class="text-xs text-slate-500 mt-1">补卡费用已从校园钱包中扣除。</p>
+              <button class="mt-4 w-full bg-blue-100 text-blue-600 text-sm py-2 rounded-full">查看凭证</button>
+            </article>
+          </section>
+
+          <section class="mt-6 mb-6">
+            <div class="bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-3xl p-5 shadow-lg flex items-center">
+              <img
+                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=200&q=80"
+                alt="团队服务"
+                class="w-24 h-24 object-cover rounded-2xl"
+              />
+              <div class="ml-4 flex-1">
+                <p class="text-xs uppercase tracking-[0.3em] text-blue-100">服务专员在线</p>
+                <h2 class="text-xl font-semibold">智能客服 · 7×24 小时</h2>
+                <p class="text-sm text-blue-100 mt-2">可语音描述问题，AI 将自动匹配最优流程。</p>
+              </div>
+              <button class="px-4 py-2 bg-white text-blue-600 rounded-full text-sm font-semibold">开始咨询</button>
+            </div>
+          </section>
+        </main>
+        <nav class="tab-bar bg-white/90 px-6 flex items-center justify-between text-xs text-slate-500">
+          <a class="flex flex-col items-center"><i class="fa-solid fa-house text-lg"></i><span class="mt-1">首页</span></a>
+          <a class="flex flex-col items-center"><i class="fa-solid fa-book text-lg"></i><span class="mt-1">课程</span></a>
+          <a class="flex flex-col items-center"><i class="fa-solid fa-newspaper text-lg"></i><span class="mt-1">资讯</span></a>
+          <a class="flex flex-col items-center text-blue-600"><i class="fa-solid fa-grip text-lg"></i><span class="mt-1">服务</span></a>
+          <a class="flex flex-col items-center"><i class="fa-solid fa-user text-lg"></i><span class="mt-1">我的</span></a>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>

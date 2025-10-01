@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>高校统一门户 - 校园地图</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1dQIxhFqefF5eDjK7uHk5j0i5dMGdg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        background: #e2e8f0;
+        font-family: 'Inter', 'SF Pro Display', 'PingFang SC', sans-serif;
+      }
+      .device-frame {
+        width: 393px;
+        height: 852px;
+        border-radius: 38px;
+        overflow: hidden;
+        box-shadow: 0 20px 45px rgba(15, 23, 42, 0.25);
+        margin: 40px auto;
+        border: 12px solid #111827;
+        background: #f8fafc;
+      }
+      .status-bar {
+        height: 44px;
+        padding: 0 18px;
+      }
+      .tab-bar {
+        height: 86px;
+        border-top: 1px solid rgba(148, 163, 184, 0.35);
+        backdrop-filter: blur(12px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="device-frame">
+      <div class="flex flex-col h-full">
+        <div class="status-bar flex items-end justify-between text-slate-900 text-[13px]">
+          <span class="font-semibold">9:41</span>
+          <div class="flex items-center space-x-1 text-[11px]">
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-full"></i>
+          </div>
+        </div>
+        <main class="flex-1 overflow-hidden bg-white">
+          <div class="relative h-full">
+            <img
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+              alt="校园地图"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute top-0 left-0 right-0 p-6 bg-gradient-to-b from-slate-900/80 via-slate-900/30 to-transparent text-white">
+              <div class="flex items-center justify-between">
+                <h1 class="text-xl font-semibold">校园地图</h1>
+                <button class="px-4 py-2 bg-white/20 rounded-full text-xs font-semibold">AR 导航</button>
+              </div>
+              <p class="text-xs text-white/70 mt-2">支持离线查看，热门地点一键导航至 Apple / 高德地图。</p>
+              <div class="mt-4 bg-white/20 rounded-full flex items-center px-4 py-2">
+                <i class="fa-solid fa-magnifying-glass text-white/80"></i>
+                <input
+                  type="text"
+                  placeholder="搜索教学楼、宿舍、餐厅或办公楼"
+                  class="flex-1 bg-transparent text-sm text-white ml-3 placeholder:text-white/70 focus:outline-none"
+                />
+                <button class="text-xs font-semibold">附近</button>
+              </div>
+            </div>
+
+            <div class="absolute inset-x-0 bottom-28 px-6">
+              <div class="bg-white rounded-3xl shadow-xl p-4">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h2 class="text-base font-semibold text-slate-900">智慧教学楼 A</h2>
+                    <p class="text-xs text-slate-500 mt-1">距您 350m · 支持 24h 预约 · 含创客空间</p>
+                  </div>
+                  <span class="px-3 py-1 text-xs bg-blue-100 text-blue-600 rounded-full">开放</span>
+                </div>
+                <div class="flex items-center space-x-3 mt-4 overflow-x-auto">
+                  <img
+                    src="https://images.unsplash.com/photo-1507537509458-b8312d35a233?auto=format&fit=crop&w=300&q=80"
+                    alt="教室"
+                    class="w-32 h-20 rounded-2xl object-cover"
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=300&q=80"
+                    alt="大厅"
+                    class="w-32 h-20 rounded-2xl object-cover"
+                  />
+                  <img
+                    src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=300&q=80"
+                    alt="实验室"
+                    class="w-32 h-20 rounded-2xl object-cover"
+                  />
+                </div>
+                <div class="mt-4 grid grid-cols-3 gap-3 text-xs text-slate-500">
+                  <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-wifi text-blue-500"></i>
+                    <span>全楼 Wi-Fi</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-elevator text-blue-500"></i>
+                    <span>智慧电梯</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-mug-saucer text-blue-500"></i>
+                    <span>咖啡角</span>
+                  </div>
+                </div>
+                <div class="mt-4 flex items-center justify-between text-sm">
+                  <button class="px-4 py-2 bg-blue-600 text-white rounded-full">开始导航</button>
+                  <button class="text-blue-600">收藏</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute bottom-0 left-0 right-0 h-24 bg-white/90 backdrop-blur border-t border-slate-200 px-6 flex items-center space-x-4 overflow-x-auto text-sm">
+              <div class="px-3 py-2 rounded-2xl bg-blue-600 text-white shadow">教学楼</div>
+              <div class="px-3 py-2 rounded-2xl bg-white shadow text-slate-600">宿舍区</div>
+              <div class="px-3 py-2 rounded-2xl bg-white shadow text-slate-600">餐饮</div>
+              <div class="px-3 py-2 rounded-2xl bg-white shadow text-slate-600">体育馆</div>
+              <div class="px-3 py-2 rounded-2xl bg-white shadow text-slate-600">行政楼</div>
+            </div>
+          </div>
+        </main>
+        <nav class="tab-bar bg-white/90 px-6 flex items-center justify-between text-xs text-slate-500">
+          <a class="flex flex-col items-center"><i class="fa-solid fa-house text-lg"></i><span class="mt-1">首页</span></a>
+          <a class="flex flex-col items-center text-blue-600"><i class="fa-solid fa-book text-lg"></i><span class="mt-1">课程</span></a>
+          <a class="flex flex-col items-center"><i class="fa-solid fa-newspaper text-lg"></i><span class="mt-1">资讯</span></a>
+          <a class="flex flex-col items-center"><i class="fa-solid fa-grip text-lg"></i><span class="mt-1">服务</span></a>
+          <a class="flex flex-col items-center"><i class="fa-solid fa-user text-lg"></i><span class="mt-1">我的</span></a>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>

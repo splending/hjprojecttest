@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>高校统一门户 - 校园资讯</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1dQIxhFqefF5eDjK7uHk5j0i5dMGdg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        background: #e2e8f0;
+        font-family: 'Inter', 'SF Pro Display', 'PingFang SC', sans-serif;
+      }
+      .device-frame {
+        width: 393px;
+        height: 852px;
+        border-radius: 38px;
+        overflow: hidden;
+        box-shadow: 0 20px 45px rgba(15, 23, 42, 0.25);
+        margin: 40px auto;
+        border: 12px solid #111827;
+        background: #f8fafc;
+      }
+      .status-bar {
+        height: 44px;
+        padding: 0 18px;
+      }
+      .tab-bar {
+        height: 86px;
+        border-top: 1px solid rgba(148, 163, 184, 0.35);
+        backdrop-filter: blur(12px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="device-frame">
+      <div class="flex flex-col h-full">
+        <div class="status-bar flex items-end justify-between text-slate-900 text-[13px]">
+          <span class="font-semibold">9:41</span>
+          <div class="flex items-center space-x-1 text-[11px]">
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-full"></i>
+          </div>
+        </div>
+        <main class="flex-1 overflow-y-auto bg-gradient-to-b from-white to-slate-100 px-6 pb-6">
+          <header class="mt-2 mb-4">
+            <h1 class="text-2xl font-semibold text-slate-900">校园资讯</h1>
+            <p class="text-sm text-slate-500 mt-1">关注学校最新公告与活动，实时掌握校园动态。</p>
+          </header>
+
+          <section class="relative">
+            <div class="rounded-3xl overflow-hidden shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1000&q=80"
+                alt="校园讲座"
+                class="w-full h-48 object-cover"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent"></div>
+              <div class="absolute bottom-4 left-6 right-6 text-white">
+                <span class="text-xs uppercase tracking-widest bg-white/20 px-3 py-1 rounded-full">头条</span>
+                <h2 class="text-xl font-semibold mt-3">人工智能创新论坛本周开幕，邀你共赴科研前沿</h2>
+                <p class="text-xs text-white/80 mt-1">2024-05-28 · 科技创新中心</p>
+              </div>
+            </div>
+            <div class="absolute top-4 right-6">
+              <span class="px-3 py-1 bg-slate-900/70 text-xs text-white rounded-full">1 / 5</span>
+            </div>
+          </section>
+
+          <section class="mt-6">
+            <div class="flex items-center justify-between">
+              <h2 class="text-lg font-semibold text-slate-900">分类</h2>
+              <button class="text-sm text-blue-600 flex items-center space-x-1">
+                <span>全部分类</span>
+                <i class="fa-solid fa-chevron-right text-xs"></i>
+              </button>
+            </div>
+            <div class="flex space-x-3 mt-3 overflow-x-auto pb-2">
+              <button class="px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-medium shadow">公告</button>
+              <button class="px-4 py-2 bg-white text-slate-600 rounded-full text-sm font-medium shadow">学术</button>
+              <button class="px-4 py-2 bg-white text-slate-600 rounded-full text-sm font-medium shadow">活动</button>
+              <button class="px-4 py-2 bg-white text-slate-600 rounded-full text-sm font-medium shadow">招聘</button>
+            </div>
+          </section>
+
+          <section class="mt-6 space-y-4">
+            <article class="bg-white rounded-3xl shadow-sm overflow-hidden">
+              <div class="h-36 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=80"
+                  alt="创新工坊"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-4">
+                <div class="flex items-center justify-between text-xs text-slate-500">
+                  <span>学术 · 创新创业学院</span>
+                  <time>1 小时前</time>
+                </div>
+                <h3 class="text-lg font-semibold text-slate-900 mt-2">开放式创新实验室启用，向全校师生开放预约</h3>
+                <p class="text-sm text-slate-500 mt-2">
+                  全新升级的创新实验室提供 AI 算力、3D 打印、XR 体验区，即日起在门户即可一键预约。
+                </p>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-3xl shadow-sm overflow-hidden">
+              <div class="h-36 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=1000&q=80"
+                  alt="校园社团"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="p-4">
+                <div class="flex items-center justify-between text-xs text-slate-500">
+                  <span>活动 · 校团委</span>
+                  <time>昨天</time>
+                </div>
+                <h3 class="text-lg font-semibold text-slate-900 mt-2">仲夏音乐节招募志愿者，赢取专属纪念礼盒</h3>
+                <p class="text-sm text-slate-500 mt-2">
+                  校园年度音乐节即将来袭，快来报名成为志愿者，与百位音乐人近距离合作。
+                </p>
+              </div>
+            </article>
+          </section>
+        </main>
+        <nav class="tab-bar bg-white/90 px-6 flex items-center justify-between text-xs text-slate-500">
+          <a class="flex flex-col items-center"><i class="fa-solid fa-house text-lg"></i><span class="mt-1">首页</span></a>
+          <a class="flex flex-col items-center"><i class="fa-solid fa-book text-lg"></i><span class="mt-1">课程</span></a>
+          <a class="flex flex-col items-center text-blue-600"><i class="fa-solid fa-newspaper text-lg"></i><span class="mt-1">资讯</span></a>
+          <a class="flex flex-col items-center"><i class="fa-solid fa-grip text-lg"></i><span class="mt-1">服务</span></a>
+          <a class="flex flex-col items-center"><i class="fa-solid fa-user text-lg"></i><span class="mt-1">我的</span></a>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>

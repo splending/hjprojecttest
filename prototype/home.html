@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>高校统一门户 - 首页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1dQIxhFqefF5eDjK7uHk5j0i5dMGdg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        background: #e2e8f0;
+        font-family: 'Inter', 'SF Pro Display', 'PingFang SC', sans-serif;
+      }
+      .device-frame {
+        width: 393px;
+        height: 852px;
+        border-radius: 38px;
+        overflow: hidden;
+        box-shadow: 0 20px 45px rgba(15, 23, 42, 0.25);
+        margin: 40px auto;
+        border: 12px solid #111827;
+        background: #f8fafc;
+      }
+      .status-bar {
+        height: 44px;
+        padding: 0 18px;
+      }
+      .tab-bar {
+        height: 86px;
+        border-top: 1px solid rgba(148, 163, 184, 0.35);
+        backdrop-filter: blur(12px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="device-frame">
+      <div class="flex flex-col h-full">
+        <div class="status-bar flex items-end justify-between text-slate-900 text-[13px]">
+          <span class="font-semibold">9:41</span>
+          <div class="flex items-center space-x-1 text-[11px]">
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-full"></i>
+          </div>
+        </div>
+        <main class="flex-1 overflow-y-auto bg-gradient-to-b from-white to-slate-100 px-6 pb-6">
+          <section class="mt-2">
+            <div class="relative rounded-3xl overflow-hidden shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1000&q=80"
+                alt="校园秋景"
+                class="w-full h-48 object-cover"
+              />
+              <div class="absolute inset-0 bg-slate-900/40"></div>
+              <div class="absolute inset-0 flex flex-col justify-between p-6 text-white">
+                <div class="flex items-center justify-between text-sm uppercase tracking-widest">
+                  <span class="bg-white/20 px-3 py-1 rounded-full">今日课表</span>
+                  <span class="flex items-center space-x-1"><i class="fa-solid fa-bell"></i><span>2 条通知</span></span>
+                </div>
+                <div>
+                  <h1 class="text-2xl font-semibold mb-1">早安，李同学</h1>
+                  <p class="text-sm text-white/90">今日共有 3 节课程，第一节 08:30 开始。</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mt-6">
+            <div class="flex items-center justify-between mb-3">
+              <h2 class="text-lg font-semibold text-slate-900">今日课表</h2>
+              <button class="text-sm text-blue-600">查看全部</button>
+            </div>
+            <div class="space-y-3">
+              <div class="bg-white rounded-2xl p-4 shadow-sm flex items-center justify-between">
+                <div>
+                  <p class="text-sm text-slate-500">08:30-10:05 · 教学楼 A203</p>
+                  <h3 class="text-base font-semibold text-slate-900">计算机网络</h3>
+                </div>
+                <span class="px-3 py-1 text-xs bg-blue-100 text-blue-600 rounded-full">待开始</span>
+              </div>
+              <div class="bg-white rounded-2xl p-4 shadow-sm flex items-center justify-between">
+                <div>
+                  <p class="text-sm text-slate-500">10:20-11:55 · 信息楼 402</p>
+                  <h3 class="text-base font-semibold text-slate-900">数据可视化设计</h3>
+                </div>
+                <span class="px-3 py-1 text-xs bg-emerald-100 text-emerald-600 rounded-full">进行中</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="mt-6">
+            <div class="flex items-center justify-between mb-3">
+              <h2 class="text-lg font-semibold text-slate-900">快捷服务</h2>
+              <button class="text-sm text-blue-600">全部服务</button>
+            </div>
+            <div class="grid grid-cols-4 gap-3 text-center text-xs">
+              <div class="flex flex-col items-center bg-white rounded-2xl py-4 shadow-sm">
+                <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mb-2"><i class="fa-solid fa-calendar-check"></i></div>
+                课程签到
+              </div>
+              <div class="flex flex-col items-center bg-white rounded-2xl py-4 shadow-sm">
+                <div class="w-10 h-10 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center mb-2"><i class="fa-solid fa-file-lines"></i></div>
+                成绩单
+              </div>
+              <div class="flex flex-col items-center bg-white rounded-2xl py-4 shadow-sm">
+                <div class="w-10 h-10 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center mb-2"><i class="fa-solid fa-building-columns"></i></div>
+                校园卡
+              </div>
+              <div class="flex flex-col items-center bg-white rounded-2xl py-4 shadow-sm">
+                <div class="w-10 h-10 rounded-full bg-cyan-100 text-cyan-600 flex items-center justify-center mb-2"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                报修
+              </div>
+            </div>
+          </section>
+
+          <section class="mt-6 mb-6">
+            <div class="flex items-center justify-between mb-3">
+              <h2 class="text-lg font-semibold text-slate-900">待办提醒</h2>
+              <button class="text-sm text-blue-600">消息中心</button>
+            </div>
+            <div class="space-y-3">
+              <div class="bg-white rounded-2xl p-4 shadow-sm flex items-start space-x-3">
+                <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mt-1"><i class="fa-solid fa-clipboard-check"></i></div>
+                <div>
+                  <h3 class="text-base font-semibold text-slate-900">实验报告提交</h3>
+                  <p class="text-sm text-slate-500">算法设计实验报告需要在今晚 23:00 前提交。</p>
+                </div>
+              </div>
+              <div class="bg-white rounded-2xl p-4 shadow-sm flex items-start space-x-3">
+                <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mt-1"><i class="fa-solid fa-bullhorn"></i></div>
+                <div>
+                  <h3 class="text-base font-semibold text-slate-900">校庆志愿者招募</h3>
+                  <p class="text-sm text-slate-500">立即报名参与 120 周年校庆志愿服务，名额有限。</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <nav class="tab-bar bg-white/90 px-6 flex items-center justify-between text-xs text-slate-500">
+          <a class="flex flex-col items-center text-blue-600"><i class="fa-solid fa-house text-lg"></i><span class="mt-1">首页</span></a>
+          <a class="flex flex-col items-center"><i class="fa-solid fa-book text-lg"></i><span class="mt-1">课程</span></a>
+          <a class="flex flex-col items-center"><i class="fa-solid fa-newspaper text-lg"></i><span class="mt-1">资讯</span></a>
+          <a class="flex flex-col items-center"><i class="fa-solid fa-grip text-lg"></i><span class="mt-1">服务</span></a>
+          <a class="flex flex-col items-center"><i class="fa-solid fa-user text-lg"></i><span class="mt-1">我的</span></a>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>

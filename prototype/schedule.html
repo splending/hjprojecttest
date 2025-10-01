@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>高校统一门户 - 日程与考试</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1dQIxhFqefF5eDjK7uHk5j0i5dMGdg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        background: #e2e8f0;
+        font-family: 'Inter', 'SF Pro Display', 'PingFang SC', sans-serif;
+      }
+      .device-frame {
+        width: 393px;
+        height: 852px;
+        border-radius: 38px;
+        overflow: hidden;
+        box-shadow: 0 20px 45px rgba(15, 23, 42, 0.25);
+        margin: 40px auto;
+        border: 12px solid #111827;
+        background: #f8fafc;
+      }
+      .status-bar {
+        height: 44px;
+        padding: 0 18px;
+      }
+      .tab-bar {
+        height: 86px;
+        border-top: 1px solid rgba(148, 163, 184, 0.35);
+        backdrop-filter: blur(12px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="device-frame">
+      <div class="flex flex-col h-full">
+        <div class="status-bar flex items-end justify-between text-slate-900 text-[13px]">
+          <span class="font-semibold">9:41</span>
+          <div class="flex items-center space-x-1 text-[11px]">
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-full"></i>
+          </div>
+        </div>
+        <main class="flex-1 overflow-y-auto bg-gradient-to-b from-white to-slate-100 px-6 pb-6">
+          <header class="mt-2 mb-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <h1 class="text-2xl font-semibold text-slate-900">日程与考试</h1>
+                <p class="text-sm text-slate-500 mt-1">同步教务日程，重要考试自动提醒。</p>
+              </div>
+              <button class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-full shadow">同步日历</button>
+            </div>
+          </header>
+
+          <section class="bg-white rounded-3xl p-4 shadow-sm">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-xs text-slate-500 uppercase tracking-[0.2em]">2024 年 5 月</p>
+                <h2 class="text-lg font-semibold text-slate-900">周视图</h2>
+              </div>
+              <div class="flex items-center space-x-3 text-slate-500 text-sm">
+                <button><i class="fa-solid fa-chevron-left"></i></button>
+                <button><i class="fa-solid fa-chevron-right"></i></button>
+              </div>
+            </div>
+            <div class="grid grid-cols-5 gap-3 mt-4">
+              <div class="p-4 rounded-2xl border border-blue-200 bg-blue-50">
+                <p class="text-xs text-blue-600">周一</p>
+                <p class="text-2xl font-semibold text-blue-700">27</p>
+                <p class="text-xs text-blue-600 mt-2">AI 项目讨论</p>
+              </div>
+              <div class="p-4 rounded-2xl border border-transparent bg-slate-50">
+                <p class="text-xs text-slate-500">周二</p>
+                <p class="text-2xl font-semibold text-slate-600">28</p>
+                <p class="text-xs text-slate-400 mt-2">体育选修</p>
+              </div>
+              <div class="p-4 rounded-2xl border border-transparent bg-slate-50">
+                <p class="text-xs text-slate-500">周三</p>
+                <p class="text-2xl font-semibold text-slate-600">29</p>
+                <p class="text-xs text-slate-400 mt-2">科研沙龙</p>
+              </div>
+              <div class="p-4 rounded-2xl border border-transparent bg-slate-50">
+                <p class="text-xs text-slate-500">周四</p>
+                <p class="text-2xl font-semibold text-slate-600">30</p>
+                <p class="text-xs text-slate-400 mt-2">英语演讲</p>
+              </div>
+              <div class="p-4 rounded-2xl border border-transparent bg-slate-50">
+                <p class="text-xs text-slate-500">周五</p>
+                <p class="text-2xl font-semibold text-slate-600">31</p>
+                <p class="text-xs text-slate-400 mt-2">社团例会</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="mt-6 space-y-4">
+            <article class="bg-white rounded-3xl shadow-sm p-4 flex items-center space-x-4">
+              <div class="w-14 h-14 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-2xl">
+                <i class="fa-solid fa-pen-to-square"></i>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center justify-between text-xs text-slate-500">
+                  <span>期末考试 · 06 月 12 日</span>
+                  <span>08:00-10:00</span>
+                </div>
+                <h3 class="text-lg font-semibold text-slate-900 mt-1">数据结构期末考试</h3>
+                <p class="text-sm text-slate-500">考场：综合教学楼 B401 · 座位号：38</p>
+              </div>
+              <button class="text-blue-600 text-sm font-medium">设置提醒</button>
+            </article>
+
+            <article class="bg-white rounded-3xl shadow-sm p-4 flex items-center space-x-4">
+              <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl">
+                <i class="fa-solid fa-people-group"></i>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center justify-between text-xs text-slate-500">
+                  <span>团队会议 · 本周四</span>
+                  <span>19:00-20:00</span>
+                </div>
+                <h3 class="text-lg font-semibold text-slate-900 mt-1">创新创业计划答辩准备</h3>
+                <p class="text-sm text-slate-500">地点：创客空间 204 · 会议链接已推送到邮箱</p>
+              </div>
+              <button class="text-blue-600 text-sm font-medium">查看议程</button>
+            </article>
+
+            <article class="bg-white rounded-3xl shadow-sm p-4 flex items-center space-x-4">
+              <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-2xl">
+                <i class="fa-solid fa-bell"></i>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center justify-between text-xs text-slate-500">
+                  <span>提醒 · 明日</span>
+                  <span>23:00</span>
+                </div>
+                <h3 class="text-lg font-semibold text-slate-900 mt-1">图书归还截止</h3>
+                <p class="text-sm text-slate-500">请于明日 23:00 前归还《人工智能导论》，避免逾期。</p>
+              </div>
+              <button class="text-blue-600 text-sm font-medium">延长借阅</button>
+            </article>
+          </section>
+        </main>
+        <nav class="tab-bar bg-white/90 px-6 flex items-center justify-between text-xs text-slate-500">
+          <a class="flex flex-col items-center"><i class="fa-solid fa-house text-lg"></i><span class="mt-1">首页</span></a>
+          <a class="flex flex-col items-center text-blue-600"><i class="fa-solid fa-book text-lg"></i><span class="mt-1">课程</span></a>
+          <a class="flex flex-col items-center"><i class="fa-solid fa-newspaper text-lg"></i><span class="mt-1">资讯</span></a>
+          <a class="flex flex-col items-center"><i class="fa-solid fa-grip text-lg"></i><span class="mt-1">服务</span></a>
+          <a class="flex flex-col items-center"><i class="fa-solid fa-user text-lg"></i><span class="mt-1">我的</span></a>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>

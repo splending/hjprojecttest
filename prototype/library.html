@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>高校统一门户 - 图书与资源</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1dQIxhFqefF5eDjK7uHk5j0i5dMGdg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        background: #e2e8f0;
+        font-family: 'Inter', 'SF Pro Display', 'PingFang SC', sans-serif;
+      }
+      .device-frame {
+        width: 393px;
+        height: 852px;
+        border-radius: 38px;
+        overflow: hidden;
+        box-shadow: 0 20px 45px rgba(15, 23, 42, 0.25);
+        margin: 40px auto;
+        border: 12px solid #111827;
+        background: #f8fafc;
+      }
+      .status-bar {
+        height: 44px;
+        padding: 0 18px;
+      }
+      .tab-bar {
+        height: 86px;
+        border-top: 1px solid rgba(148, 163, 184, 0.35);
+        backdrop-filter: blur(12px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="device-frame">
+      <div class="flex flex-col h-full">
+        <div class="status-bar flex items-end justify-between text-slate-900 text-[13px]">
+          <span class="font-semibold">9:41</span>
+          <div class="flex items-center space-x-1 text-[11px]">
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-full"></i>
+          </div>
+        </div>
+        <main class="flex-1 overflow-y-auto bg-gradient-to-b from-white to-slate-100 px-6 pb-6">
+          <header class="mt-2 mb-4">
+            <h1 class="text-2xl font-semibold text-slate-900">图书与资源</h1>
+            <p class="text-sm text-slate-500 mt-1">快速检索图书、查阅电子资源、预约自习空间。</p>
+            <div class="mt-4 flex items-center bg-white rounded-full shadow px-4 py-2">
+              <i class="fa-solid fa-magnifying-glass text-slate-400"></i>
+              <input
+                type="text"
+                placeholder="搜索图书、期刊或资源编号"
+                class="flex-1 bg-transparent text-sm text-slate-600 ml-3 focus:outline-none"
+              />
+              <button class="px-3 py-1 bg-blue-100 text-blue-600 text-xs font-semibold rounded-full">高级筛选</button>
+            </div>
+          </header>
+
+          <section class="bg-blue-600 text-white rounded-3xl p-5 shadow-lg">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-sm text-blue-100 uppercase tracking-[0.2em]">智能推荐</p>
+                <h2 class="text-xl font-semibold mt-1">期末备考必读书单</h2>
+                <p class="text-sm text-blue-100 mt-2">精选 12 本热门书籍，支持一键预约自提柜。</p>
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=320&q=80"
+                alt="图书馆"
+                class="w-24 h-24 object-cover rounded-2xl"
+              />
+            </div>
+          </section>
+
+          <section class="mt-6">
+            <div class="flex items-center justify-between mb-3">
+              <h2 class="text-lg font-semibold text-slate-900">热门借阅</h2>
+              <button class="text-sm text-blue-600">查看全部</button>
+            </div>
+            <div class="space-y-4">
+              <article class="bg-white rounded-3xl shadow-sm p-4 flex items-center space-x-4">
+                <img
+                  src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=160&q=80"
+                  alt="人工智能"
+                  class="w-16 h-20 object-cover rounded-2xl"
+                />
+                <div class="flex-1">
+                  <h3 class="text-base font-semibold text-slate-900">人工智能导论（第 4 版）</h3>
+                  <p class="text-xs text-slate-500 mt-1">预约量 128 · 剩余 6 本 · 计算机学院</p>
+                  <div class="flex items-center space-x-2 mt-3">
+                    <span class="px-3 py-1 text-xs bg-blue-100 text-blue-600 rounded-full">可借阅</span>
+                    <span class="px-3 py-1 text-xs bg-emerald-100 text-emerald-600 rounded-full">电子版</span>
+                  </div>
+                </div>
+                <button class="text-blue-600 text-sm font-medium">预约</button>
+              </article>
+
+              <article class="bg-white rounded-3xl shadow-sm p-4 flex items-center space-x-4">
+                <img
+                  src="https://images.unsplash.com/photo-1516974409140-121c2ad327cf?auto=format&fit=crop&w=160&q=80"
+                  alt="设计心理学"
+                  class="w-16 h-20 object-cover rounded-2xl"
+                />
+                <div class="flex-1">
+                  <h3 class="text-base font-semibold text-slate-900">设计心理学（修订版）</h3>
+                  <p class="text-xs text-slate-500 mt-1">预约量 96 · 剩余 3 本 · 设计学院</p>
+                  <div class="flex items-center space-x-2 mt-3">
+                    <span class="px-3 py-1 text-xs bg-amber-100 text-amber-600 rounded-full">紧俏</span>
+                    <span class="px-3 py-1 text-xs bg-blue-100 text-blue-600 rounded-full">纸质</span>
+                  </div>
+                </div>
+                <button class="text-blue-600 text-sm font-medium">排队</button>
+              </article>
+            </div>
+          </section>
+
+          <section class="mt-6 mb-6">
+            <div class="flex items-center justify-between mb-3">
+              <h2 class="text-lg font-semibold text-slate-900">空间预约</h2>
+              <button class="text-sm text-blue-600">管理预约</button>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-white rounded-3xl shadow-sm p-4">
+                <img
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=80"
+                  alt="学习空间"
+                  class="w-full h-28 object-cover rounded-2xl"
+                />
+                <h3 class="text-base font-semibold text-slate-900 mt-3">智慧研讨室</h3>
+                <p class="text-xs text-slate-500 mt-1">支持 8 人视频会议 · 附近有白板与摄像设备</p>
+                <button class="mt-3 w-full bg-blue-600 text-white text-sm py-2 rounded-full">预约时段</button>
+              </div>
+              <div class="bg-white rounded-3xl shadow-sm p-4">
+                <img
+                  src="https://images.unsplash.com/photo-1510936111840-65e151ad71bb?auto=format&fit=crop&w=400&q=80"
+                  alt="自习座位"
+                  class="w-full h-28 object-cover rounded-2xl"
+                />
+                <h3 class="text-base font-semibold text-slate-900 mt-3">深夜自习区</h3>
+                <p class="text-xs text-slate-500 mt-1">开放至 24:00 · 提供充电口与静音隔间</p>
+                <button class="mt-3 w-full bg-blue-100 text-blue-600 text-sm py-2 rounded-full">选择座位</button>
+              </div>
+            </div>
+          </section>
+        </main>
+        <nav class="tab-bar bg-white/90 px-6 flex items-center justify-between text-xs text-slate-500">
+          <a class="flex flex-col items-center"><i class="fa-solid fa-house text-lg"></i><span class="mt-1">首页</span></a>
+          <a class="flex flex-col items-center text-blue-600"><i class="fa-solid fa-book text-lg"></i><span class="mt-1">课程</span></a>
+          <a class="flex flex-col items-center"><i class="fa-solid fa-newspaper text-lg"></i><span class="mt-1">资讯</span></a>
+          <a class="flex flex-col items-center"><i class="fa-solid fa-grip text-lg"></i><span class="mt-1">服务</span></a>
+          <a class="flex flex-col items-center"><i class="fa-solid fa-user text-lg"></i><span class="mt-1">我的</span></a>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>

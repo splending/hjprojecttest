@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>知识采集系统（静态演示页）</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --primary: #1e5eff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --ok: #16a34a;
+      --star: #dc2626;
+      --line: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 1080px; margin: 0 auto; padding: 28px 18px 40px; }
+    .hero {
+      background: linear-gradient(135deg, #1e5eff 0%, #4f46e5 100%);
+      color: #fff;
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(30, 94, 255, 0.2);
+    }
+    .hero h1 { margin: 0 0 10px; font-size: 30px; }
+    .hero p { margin: 0; opacity: 0.95; }
+    .grid {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .card h3 { margin: 0 0 10px; font-size: 18px; }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #3730a3;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+    .star { color: var(--star); font-weight: 700; }
+    ul { margin: 0; padding-left: 20px; }
+    li { margin: 6px 0; }
+    .flow {
+      margin-top: 18px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .step {
+      border: 1px dashed #bfdbfe;
+      background: #f8fbff;
+      border-radius: 10px;
+      padding: 12px;
+    }
+    .step strong { color: var(--primary); }
+    .footer {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .ok {
+      color: var(--ok);
+      font-weight: 600;
+    }
+    code { background: #f3f4f6; padding: 2px 6px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <h1>新知识采集系统（静态 HTML 原型）</h1>
+      <p>面向学校多模态文档大模型建设，提供统一接入、自动解析、全流程监控与可追溯的数据采集能力。</p>
+    </section>
+
+    <section class="grid" aria-label="功能清单">
+      <article class="card">
+        <h3>1.1.1 整体能力升级</h3>
+        <ul>
+          <li>支持结合学校前期建设的多模态文档大模型能力。</li>
+          <li>形成新一代知识采集系统，统一管理多源数据采集流程。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>1.1.2 统一接入能力</h3>
+        <ul>
+          <li>支持结构化、半结构化、非结构化数据统一接入。</li>
+          <li>支持 Word/PDF/Excel/PPT/TXT/图片/音视频/扫描件。</li>
+          <li>采集方式支持 API 接口、数据库直连、批量文件导入。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>1.1.3 多模态解析能力 <span class="badge">OCR + ASR + 视频解析</span></h3>
+        <ul>
+          <li>集成高精度 OCR，支持扫描文档与图片文字精准提取。</li>
+          <li>支持表格结构还原与版面分析。</li>
+          <li>集成语音识别与视频解析，实现自动转写与内容提取。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>1.1.4 <span class="star">★</span> 私有化部署与并行处理</h3>
+        <ul>
+          <li>支持私有化部署的多模态大模型解析能力。</li>
+          <li>支持多进程并行处理，提升吞吐效率。</li>
+          <li><span class="ok">确保数据不出校、不依赖外部公网服务。</span></li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>1.1.5 文件处理自动化</h3>
+        <ul>
+          <li>支持批量文件快速上传。</li>
+          <li>支持自动清洗、去重与格式标准化处理。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>1.1.6 结构化知识抽取</h3>
+        <ul>
+          <li>从非结构化文档中自动抽取实体、关系、属性等知识信息。</li>
+          <li>为后续知识库入库和检索提供结构化基础。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>1.1.7 多元信息完整提取</h3>
+        <ul>
+          <li>完整提取图片、表格、公式、附件、超链接等信息。</li>
+          <li>保留多模态内容完整性，避免关键上下文丢失。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>1.1.8 目录结构识别</h3>
+        <ul>
+          <li>自动识别章节层级与目录结构。</li>
+          <li>生成可浏览的目录树，便于后续检索与阅读。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>1.1.9 采集监控与审计</h3>
+        <ul>
+          <li>全流程监控任务状态。</li>
+          <li>提供成功率、数据量统计与异常告警。</li>
+          <li>支持日志审计，确保数据来源可追溯。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="flow">
+      <h3>统一格式转换与备份策略</h3>
+      <p>系统将所有上传文档统一转换为便于管理的标准格式（如 <code>Markdown</code>、<code>TXT</code>），同时保留原始文件备份。</p>
+      <div class="steps">
+        <div class="step"><strong>步骤 1：</strong>多源数据接入</div>
+        <div class="step"><strong>步骤 2：</strong>清洗去重与标准化</div>
+        <div class="step"><strong>步骤 3：</strong>多模态解析与知识抽取</div>
+        <div class="step"><strong>步骤 4：</strong>格式转换与原文归档</div>
+        <div class="step"><strong>步骤 5：</strong>监控审计与异常告警</div>
+      </div>
+    </section>
+
+    <p class="footer">说明：本页面为静态 HTML 原型，可直接作为需求说明展示页或后续前端开发基线。</p>
+  </main>
+</body>
+</html>
